@@ -9,7 +9,9 @@
     <sprite>sprites\sp_cowpoke</sprite>
     <sprite>sprites\sp_cow</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\MainTileset</background>
+  </backgrounds>
   <paths name="paths"/>
   <rooms name="rooms">
     <room>rooms\Abduction_Zone</room>
