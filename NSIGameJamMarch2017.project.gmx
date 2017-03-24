@@ -6,8 +6,8 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\smiley_placeholder</sprite>
-    <sprite>sprites\Cowpoke</sprite>
+    <sprite>sprites\sp_cowpoke</sprite>
+    <sprite>sprites\sp_cow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
