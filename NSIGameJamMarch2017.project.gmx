@@ -7,9 +7,13 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\smiley_placeholder</sprite>
+    <sprite>sprites\Cowpoke</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <rooms name="rooms">
+    <room>rooms\Abduction_Zone</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
