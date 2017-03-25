@@ -9,6 +9,7 @@
     <sprite>sprites\sp_cowpoke</sprite>
     <sprite>sprites\sp_cow</sprite>
     <sprite>sprites\sp_arrow</sprite>
+    <sprite>sprites\sp_mind_control_glow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MainTileset</background>
@@ -16,10 +17,21 @@
     <background>background\bg_ui_border</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\createTimelineForCommand.gml</script>
+    <script>scripts\scr_go_down.gml</script>
+    <script>scripts\scr_move_randomly.gml</script>
+    <script>scripts\scr_stop_and_clear.gml</script>
+    <script>scripts\scr_go_right.gml</script>
+    <script>scripts\scr_go_up.gml</script>
+    <script>scripts\scr_go_left.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_human</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_hit_controller</object>
+    <object>objects\obj_mind_control_glow</object>
+    <object>objects\obj_mind_control_controller</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\FakeSongRandomArrowTimeline</timeline>
@@ -27,7 +39,7 @@
   <rooms name="rooms">
     <room>rooms\Abduction_Zone</room>
   </rooms>
-  <constants number="12">
+  <constants number="29">
     <constant name="C_ARROW_DOWN">0</constant>
     <constant name="C_ARROW_DOWN_LEFT">1</constant>
     <constant name="C_ARROW_DOWN_RIGHT">2</constant>
@@ -40,6 +52,23 @@
     <constant name="C_ARROW_UP">9</constant>
     <constant name="C_ARROW_UP_LEFT">10</constant>
     <constant name="C_ARROW_UP_RIGHT">11</constant>
+    <constant name="C_FREE_HUMAN_INDEX">12</constant>
+    <constant name="C_COMMAND_DURATION">3000</constant>
+    <constant name="C_BASE_HUMAN_SPEED">3</constant>
+    <constant name="C_BASE_ARROW_SPEED">5</constant>
+    <constant name="B_FREE_HUMAN">global.behaviour_free_human</constant>
+    <constant name="B_MC_DOWN">global.behaviour_mind_control_down</constant>
+    <constant name="B_MC_DOWN_LEFT">global.behaviour_mind_control_down_left</constant>
+    <constant name="B_MC_DOWN_RIGHT">global.behaviour_mind_control_down_right</constant>
+    <constant name="B_MC_LEFT">global.behaviour_mind_control_left</constant>
+    <constant name="B_MC_LEFT_DOWN">global.behaviour_mind_control_left_down</constant>
+    <constant name="B_MC_LEFT_UP">global.behaviour_mind_control_left_up</constant>
+    <constant name="B_MC_RIGHT">global.behaviour_mind_control_right</constant>
+    <constant name="B_MC_RIGHT_DOWN">global.behaviour_mind_control_right_down</constant>
+    <constant name="B_MC_RIGHT_UP">global.behaviour_mind_control_right_up</constant>
+    <constant name="B_MC_UP">global.behaviour_mind_control_up</constant>
+    <constant name="B_MC_UP_LEFT">global.behaviour_mind_control_up_left</constant>
+    <constant name="B_MC_UP_RIGHT">global.behaviour_mind_control_up_right</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
