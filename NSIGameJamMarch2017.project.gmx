@@ -18,7 +18,12 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_human</object>
+    <object>objects\obj_arrow</object>
+    <object>objects\obj_hit_controller</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\FakeSongRandomArrowTimeline</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\Abduction_Zone</room>
   </rooms>

@@ -55,6 +55,10 @@
     <instance objName="obj_human" x="640" y="128" name="inst_537E8BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_human" x="1088" y="1024" name="inst_F03150AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_human" x="1856" y="832" name="inst_ABA61978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hit_controller" x="0" y="960" name="inst_33276ACA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_arrow" x="1088" y="576" name="inst_00ABE476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_human" x="1856" y="-64" name="inst_5E33CC9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_human" x="2176" y="576" name="inst_376D4E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="MainTileset" x="960" y="128" w="64" h="64" xo="0" yo="0" id="10000001" name="inst_9952400B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
