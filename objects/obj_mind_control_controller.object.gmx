@@ -27,19 +27,19 @@
             <kind>1</kind>
             <string>/// Set up behaviour Timelines
 
-global.behaviour_free_human = createTimelineForCommand(C_FREE_HUMAN_INDEX);
-global.behaviour_mind_control_down = createTimelineForCommand(C_ARROW_DOWN);
-global.behaviour_mind_control_down_left = createTimelineForCommand(C_ARROW_DOWN_LEFT);
-global.behaviour_mind_control_down_right = createTimelineForCommand(C_ARROW_DOWN_RIGHT);
-global.behaviour_mind_control_left = createTimelineForCommand(C_ARROW_LEFT);
-global.behaviour_mind_control_left_down = createTimelineForCommand(C_ARROW_LEFT_DOWN);
-global.behaviour_mind_control_left_up = createTimelineForCommand(C_ARROW_LEFT_UP);
-global.behaviour_mind_control_right = createTimelineForCommand(C_ARROW_RIGHT);
-global.behaviour_mind_control_right_down = createTimelineForCommand(C_ARROW_RIGHT_DOWN);
-global.behaviour_mind_control_right_up = createTimelineForCommand(C_ARROW_RIGHT_UP);
-global.behaviour_mind_control_up = createTimelineForCommand(C_ARROW_UP);
-global.behaviour_mind_control_up_left = createTimelineForCommand(C_ARROW_UP_LEFT);
-global.behaviour_mind_control_up_right = createTimelineForCommand(C_ARROW_UP_RIGHT);
+//global.behaviour_free_human = createTimelineForCommand(C_FREE_HUMAN_INDEX);
+//global.behaviour_mind_control_down = createTimelineForCommand(C_ARROW_DOWN);
+//global.behaviour_mind_control_down_left = createTimelineForCommand(C_ARROW_DOWN_LEFT);
+//global.behaviour_mind_control_down_right = createTimelineForCommand(C_ARROW_DOWN_RIGHT);
+//global.behaviour_mind_control_left = createTimelineForCommand(C_ARROW_LEFT);
+//global.behaviour_mind_control_left_down = createTimelineForCommand(C_ARROW_LEFT_DOWN);
+//global.behaviour_mind_control_left_up = createTimelineForCommand(C_ARROW_LEFT_UP);
+//global.behaviour_mind_control_right = createTimelineForCommand(C_ARROW_RIGHT);
+//global.behaviour_mind_control_right_down = createTimelineForCommand(C_ARROW_RIGHT_DOWN);
+//global.behaviour_mind_control_right_up = createTimelineForCommand(C_ARROW_RIGHT_UP);
+//global.behaviour_mind_control_up = createTimelineForCommand(C_ARROW_UP);
+//global.behaviour_mind_control_up_left = createTimelineForCommand(C_ARROW_UP_LEFT);
+//global.behaviour_mind_control_up_right = createTimelineForCommand(C_ARROW_UP_RIGHT);
 </string>
           </argument>
         </arguments>

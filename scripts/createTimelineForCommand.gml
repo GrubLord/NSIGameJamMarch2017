@@ -3,6 +3,7 @@
     var newTimeline;
     
     newTimeline = timeline_add();
+    
     switch(argument0) {
         case C_ARROW_DOWN:
             timeline_moment_add_script(newTimeline, 0, scr_go_down);
@@ -52,6 +53,8 @@
             timeline_moment_add_script(newTimeline, 0, scr_move_randomly);
             break;
     }
+    show_debug_message("Registering stop and clear at time " + string(C_COMMAND_DURATION));
+    
     timeline_moment_add_script(newTimeline, C_COMMAND_DURATION, scr_stop_and_clear);
     
     return newTimeline;

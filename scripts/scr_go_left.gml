@@ -1,1 +1,1 @@
-motion_set(0, C_BASE_HUMAN_SPEED);
+motion_set(180, C_BASE_HUMAN_SPEED);

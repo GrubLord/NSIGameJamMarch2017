@@ -31,6 +31,8 @@ depth = 100;
 mc_glow = 0;
 command_list = ds_list_create();
 timeline_index = -1;
+timeline_position = 0;
+timeline_running = false;
 </string>
           </argument>
         </arguments>
@@ -55,9 +57,10 @@ timeline_index = -1;
             <kind>1</kind>
             <string>/// If Stopped, Check Command Queue or Return to Normal Human AI
 
-if(timeline_index == -1) {
-    new_timeline_index = B_FREE_HUMAN;
-
+if(timeline_index == -1)
+{
+    new_timeline_index = behaviour_free_human;
+    
     if(!ds_list_empty(command_list)) {
         new_timeline_index = ds_list_find_value(command_list, 0);
         ds_list_delete(command_list, 0);
