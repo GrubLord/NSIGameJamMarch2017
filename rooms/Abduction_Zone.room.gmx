@@ -31,8 +31,8 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="-1" name="bg_signal_bar" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="-1" name="bg_ui_border" x="303" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="303" y="0" htiled="0" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -50,7 +50,12 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="obj_human" x="1344" y="256" name="inst_FFAED6D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_human" x="640" y="128" name="inst_537E8BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_human" x="1088" y="1024" name="inst_F03150AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_human" x="1856" y="832" name="inst_ABA61978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles>
     <tile bgName="MainTileset" x="960" y="128" w="64" h="64" xo="0" yo="0" id="10000001" name="inst_9952400B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="MainTileset" x="320" y="192" w="64" h="64" xo="0" yo="0" id="10000002" name="inst_6E490012" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -972,6 +977,11 @@
     <tile bgName="MainTileset" x="2496" y="256" w="64" h="64" xo="0" yo="0" id="10000922" name="inst_607A78ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="MainTileset" x="2496" y="320" w="64" h="64" xo="0" yo="0" id="10000923" name="inst_587E13AC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="MainTileset" x="2432" y="256" w="64" h="64" xo="0" yo="0" id="10000924" name="inst_F266382B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_signal_bar" x="384" y="640" w="303" h="1440" xo="303" yo="0" id="10000925" name="inst_387234AA" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_signal_bar" x="320" y="832" w="303" h="1440" xo="303" yo="0" id="10000926" name="inst_E660FB26" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_signal_bar" x="128" y="640" w="303" h="1440" xo="303" yo="0" id="10000927" name="inst_B6740CD4" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_signal_bar" x="0" y="0" w="303" h="1440" xo="0" yo="0" id="10000928" name="inst_2460B9FB" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_ui_border" x="256" y="0" w="84" h="1440" xo="0" yo="0" id="10000929" name="inst_30B9DB3B" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

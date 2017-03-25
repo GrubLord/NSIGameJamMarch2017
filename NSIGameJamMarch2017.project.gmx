@@ -16,9 +16,26 @@
     <background>background\bg_ui_border</background>
   </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_human</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\Abduction_Zone</room>
   </rooms>
+  <constants number="12">
+    <constant name="C_ARROW_DOWN">0</constant>
+    <constant name="C_ARROW_DOWN_LEFT">1</constant>
+    <constant name="C_ARROW_DOWN_RIGHT">2</constant>
+    <constant name="C_ARROW_LEFT">3</constant>
+    <constant name="C_ARROW_LEFT_DOWN">4</constant>
+    <constant name="C_ARROW_LEFT_UP">5</constant>
+    <constant name="C_ARROW_RIGHT">6</constant>
+    <constant name="C_ARROW_RIGHT_DOWN">7</constant>
+    <constant name="C_ARROW_RIGHT_UP">8</constant>
+    <constant name="C_ARROW_UP">9</constant>
+    <constant name="C_ARROW_UP_LEFT">10</constant>
+    <constant name="C_ARROW_UP_RIGHT">11</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
