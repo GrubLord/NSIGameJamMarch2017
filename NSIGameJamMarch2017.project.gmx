@@ -8,9 +8,12 @@
   <sprites name="sprites">
     <sprite>sprites\sp_cowpoke</sprite>
     <sprite>sprites\sp_cow</sprite>
+    <sprite>sprites\sp_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MainTileset</background>
+    <background>background\bg_signal_bar</background>
+    <background>background\bg_ui_border</background>
   </backgrounds>
   <paths name="paths"/>
   <rooms name="rooms">
