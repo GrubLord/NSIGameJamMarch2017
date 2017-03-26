@@ -30,9 +30,11 @@
 depth = 100;
 mc_glow = 0;
 command_list = ds_list_create();
+object_default_behaviour = behaviour_free_human;
 timeline_index = -1;
 timeline_position = 0;
 timeline_running = false;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -59,20 +61,89 @@ timeline_running = false;
 
 if(timeline_index == -1)
 {
-    new_timeline_index = behaviour_free_human;
+    //show_debug_message("Timeline reset");
+    new_timeline_index = object_default_behaviour;
     
     if(!ds_list_empty(command_list)) {
         new_timeline_index = ds_list_find_value(command_list, 0);
         ds_list_delete(command_list, 0);
+        
+        //show_debug_message("Fetched next command");
     }
     
-    if(mc_glow != 0) {
+    if((new_timeline_index == object_default_behaviour) &amp;&amp; (mc_glow != 0)) {
         with(mc_glow) instance_destroy();
+        //show_debug_message("Killed MC glow");
     }
     
     timeline_index = new_timeline_index;
     timeline_position = 0;
     timeline_running = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// If outside the boundaries, get back inside them.
+
+if(x &lt; 338) {
+    x = 338;
+}
+
+if(x &gt; 2496) {
+    x = 2496;
+}
+
+if(y &lt; 0) {
+    y = 0;
+}
+
+if(y &gt; 1344) {
+    y = 1344;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Apply mind-control glow.
+
+if(mc_glow == 0) {
+    mc_glow = instance_create(x, y, obj_mind_control_glow);
+    mc_glow.followed_cowboy = self
 }
 </string>
           </argument>
