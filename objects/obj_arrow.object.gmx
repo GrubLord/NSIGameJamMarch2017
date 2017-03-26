@@ -62,8 +62,7 @@ if (place_meeting(x, y, obj_hit_controller)) {
     in_hit_area = true;
 } else {
     if(in_hit_area &amp;&amp; !hit_or_missed) {
-        /// Miss!
-        image_blend = c_red;
+        scr_miss_arrow(self);
     }
     in_hit_area = false;
 }
