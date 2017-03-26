@@ -50,8 +50,10 @@ abduction_site_y = irandom_range(-64, 1152);
             <kind>1</kind>
             <string>/// Start Abduction Beam
 
-abduction_beam = instance_create(x, y, obj_abduction_beam);
-abduction_beam.followed_cowboy = self
+if(abduction_beam == 0) {
+    abduction_beam = instance_create(x, y, obj_abduction_beam);
+    abduction_beam.followed_cowboy = self
+}
 </string>
           </argument>
         </arguments>

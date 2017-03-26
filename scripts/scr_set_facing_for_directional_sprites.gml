@@ -1,7 +1,5 @@
 var my_sprite = object_get_sprite(object_index);
 
-show_debug_message("Setting facing");
-
 if(my_sprite != -1) {
     if(sprite_get_number(my_sprite) == 4) {
         if(direction <= 315 && direction >= 225 ) {

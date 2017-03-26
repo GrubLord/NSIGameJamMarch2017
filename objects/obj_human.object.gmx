@@ -30,7 +30,7 @@
 depth = 100;
 mc_glow = 0;
 command_list = ds_list_create();
-object_default_behaviour = behaviour_free_human;
+object_default_behaviour = -1;
 timeline_index = -1;
 timeline_position = 0;
 timeline_running = false;
@@ -73,10 +73,56 @@ if(timeline_index == -1)
     
     if((new_timeline_index == object_default_behaviour) &amp;&amp; (mc_glow != 0)) {
         with(mc_glow) instance_destroy();
+        mc_glow = 0;
         //show_debug_message("Killed MC glow");
     }
     
-    timeline_index = new_timeline_index;
+    if((mc_glow != 0) &amp;&amp; !((new_timeline_index == object_default_behaviour) || (new_timeline_index == C_FREE_HUMAN_INDEX))) {
+        mc_glow.image_index = new_timeline_index;
+    }
+    
+    switch(new_timeline_index) {
+        case C_ARROW_DOWN:
+            timeline_index = behaviour_mind_control_down;
+            break;
+        case C_ARROW_DOWN_LEFT:
+            timeline_index = behaviour_mind_control_down_left;
+            break;
+        case C_ARROW_DOWN_RIGHT:
+            timeline_index = behaviour_mind_control_down_right;
+            break;
+        case C_ARROW_LEFT:
+            timeline_index = behaviour_mind_control_down_left;
+            break;
+        case C_ARROW_LEFT_DOWN:
+            timeline_index = behaviour_mind_control_down_left_down;
+            break;
+        case C_ARROW_LEFT_UP:
+            timeline_index = behaviour_mind_control_down_left_up;
+            break;
+        case C_ARROW_RIGHT:
+            timeline_index = behaviour_mind_control_right;
+            break;
+        case C_ARROW_RIGHT_DOWN:
+            timeline_index = behaviour_mind_control_right_down;
+            break;
+        case C_ARROW_RIGHT_UP:
+            timeline_index = behaviour_mind_control_right_up;
+            break;
+        case C_ARROW_UP:
+            timeline_index = behaviour_mind_control_up;
+            break;
+        case C_ARROW_UP_LEFT:
+            timeline_index = behaviour_mind_control_up_left;
+            break;
+        case C_ARROW_UP_RIGHT:
+            timeline_index = behaviour_mind_control_up_right;
+            break;
+        case C_FREE_HUMAN_INDEX:
+        case object_default_behaviour:
+            timeline_index = behaviour_free_human;
+            break;
+    }
     timeline_position = 0;
     timeline_running = true;
 }
@@ -139,12 +185,23 @@ if(y &gt; 1344) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Apply mind-control glow.
+            <string>/// Apply new command.
 
-if(mc_glow == 0) {
-    mc_glow = instance_create(x, y, obj_mind_control_glow);
-    mc_glow.followed_cowboy = self
+var next_command = scr_get_next_command_to_apply()
+
+if(next_command != -1) {
+    if(mc_glow == 0) {
+        timeline_index = -1;
+        ds_list_add(command_list, next_command);
+        mc_glow = instance_create(x, y, obj_mind_control_glow);
+        mc_glow.followed_cowboy = self
+        mc_glow.image_index = next_command;
+    } else {
+        ds_list_add(command_list, next_command);
+    }
 }
+
+
 </string>
           </argument>
         </arguments>

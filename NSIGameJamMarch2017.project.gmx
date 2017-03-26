@@ -17,17 +17,24 @@
     <background>background\MainTileset</background>
     <background>background\bg_signal_bar</background>
     <background>background\bg_ui_border</background>
+    <background>background\bg_ui_pink</background>
+    <background>background\bg_background_stuff</background>
+    <background>background\bg_ui_horizontal_border</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\createTimelineForCommand.gml</script>
-    <script>scripts\scr_go_down.gml</script>
     <script>scripts\scr_move_randomly.gml</script>
     <script>scripts\scr_stop_and_clear.gml</script>
     <script>scripts\scr_go_right.gml</script>
-    <script>scripts\scr_go_up.gml</script>
     <script>scripts\scr_go_left.gml</script>
+    <script>scripts\scr_go_up.gml</script>
+    <script>scripts\scr_go_down.gml</script>
     <script>scripts\scr_set_facing_for_directional_sprites.gml</script>
+    <script>scripts\scr_miss_arrow.gml</script>
+    <script>scripts\scr_hit_arrow.gml</script>
+    <script>scripts\scr_add_to_command_list.gml</script>
+    <script>scripts\scr_get_next_command_to_apply.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_human</object>
@@ -38,6 +45,7 @@
     <object>objects\obj_cow</object>
     <object>objects\obj_ufo</object>
     <object>objects\obj_abduction_beam</object>
+    <object>objects\obj_command_list</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\FakeSongRandomArrowTimeline</timeline>
@@ -59,7 +67,7 @@
   <rooms name="rooms">
     <room>rooms\Abduction_Zone</room>
   </rooms>
-  <constants number="30">
+  <constants number="31">
     <constant name="C_ARROW_DOWN">0</constant>
     <constant name="C_ARROW_DOWN_LEFT">1</constant>
     <constant name="C_ARROW_DOWN_RIGHT">2</constant>
@@ -76,7 +84,7 @@
     <constant name="C_COMMAND_DURATION">30000000</constant>
     <constant name="C_BASE_HUMAN_SPEED">3</constant>
     <constant name="C_BASE_ARROW_SPEED">5</constant>
-    <constant name="C_UFO_MOVE_SPEED">10</constant>
+    <constant name="C_UFO_MOVE_SPEED">5</constant>
     <constant name="B_FREE_HUMAN">global.behaviour_free_human</constant>
     <constant name="B_MC_DOWN">global.behaviour_mind_control_down</constant>
     <constant name="B_MC_DOWN_LEFT">global.behaviour_mind_control_down_left</constant>
@@ -90,6 +98,7 @@
     <constant name="B_MC_UP">global.behaviour_mind_control_up</constant>
     <constant name="B_MC_UP_LEFT">global.behaviour_mind_control_up_left</constant>
     <constant name="B_MC_UP_RIGHT">global.behaviour_mind_control_up_right</constant>
+    <constant name="C_UFO_COMMAND_MOVE_AMOUNT">300</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
